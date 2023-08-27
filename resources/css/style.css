@@ -1,0 +1,216 @@
+:root{
+    --brand-color: #ace402;
+    --text-color: #252328;
+    --accent: #b44429;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    cursor: url('../media/cursors/Chicken Normal Select.cur'), default;
+}
+
+a, .button{
+    cursor: url('../media/cursors/Chicken Precision Select.cur'), pointer;
+}
+
+input, textarea{
+    cursor: url('../media/cursors/Chicken Handwriting.cur'), text;
+}
+
+html{
+    font-size: 16;
+    font-family: Khula, sans-serif;
+    color: var(--text-color);
+    background-image: url('../media/gif/chickenpeck.gif');
+    background-size: 10%;
+}
+
+h1{
+    font-family: Slackey, sans-serif;
+}
+
+h2{
+    font-family: "Baloo 2";
+    text-align: center;
+}
+
+header {
+    display: flex;
+    position:fixed;
+    z-index: 2;
+    width: 100%;
+    height: 10rem;
+    background: top left/6rem 6rem repeat-x url("../media/gif/anarchistchicken.gif") var(--brand-color);
+    align-items: end;
+    box-shadow: 0px 1px 5px var(--text-color);
+}
+nav, menu{
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+menu{
+    list-style: none;
+    font-size: 1.5em;
+}
+
+menu li{
+    text-align: center;
+    font-family: Slackey;
+    display: inline;
+}
+
+menu li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+menu li a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    color: inherit;
+}
+
+menu li a:active{
+    color: #6F2715;
+}
+
+menu li h1{
+    display: inline;
+}
+
+main{
+    position: relative;
+    background: #ace402;
+    top: 10rem;
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template: "spectacles poulet poulet" 1fr
+                   "spectacles bio   bio" 1.5fr
+                   "contact contact contact" 1fr
+                   "clips clips clips" 0.6fr 
+                   "socialmedia socialmedia socialmedia" 0.3fr/ 2fr 1fr 1fr;
+    row-gap: 1rem;
+}
+
+#spectacles{
+    display: flex;
+    grid-area: spectacles;
+    background: center/ 130% no-repeat url(../media/gif/fire.gif);
+    padding: 5rem 3rem;
+}
+
+#spectacles table{
+    margin: 0 auto;
+    background-color: #ace402bb;
+    border-radius: 1rem;
+    text-align: center;
+    width: 90%;
+    padding: 1rem;
+    align-self: center;
+}
+#poulet{
+    grid-area: poulet;
+    width: 100%;
+    max-width: 368px;
+    align-self: center;
+    justify-self: center;
+    border-radius: 100%;
+}
+#poulet img{
+    width: 100%;
+}
+#bio{
+    grid-area: bio;
+    background: center / cover url(../media/gif/about.webp);
+    padding-top: 12rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    text-align: center;
+}
+#clips{
+    text-align: center;
+    grid-area: clips;
+    width: 90%;
+    margin: 0;
+    justify-self: center;
+}
+
+.clip-container{
+    display: flex;
+    justify-content: space-between;
+    color:aliceblue;
+    height: 100%;
+}
+#clips .example{
+    background-color: #252328dd;
+    width: 30%;
+    height: 80%;
+    border-radius: 1rem;
+}
+#contact{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height:100%;
+    background: right/ 25% no-repeat url(../media/gif/featherfooter.gif) #6F2715;
+    color: #ACE402;
+    grid-area:contact;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+input, textarea{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #252328;
+}
+
+.button{
+    background: #ace402;
+    font-family: "Baloo 2";
+}
+
+#socialmedia{
+    grid-area: socialmedia;
+    width: 90%;
+    justify-self: center;
+    text-align: center;
+}
+
+.socialmedia-container{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+footer{
+    position: relative;
+    top: 10rem;
+    background: #6F2715;
+    color:var(--brand-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* media settings for under 1000px needed */
+
+#pouletenarbre{
+    background: center/ cover url('../media/img/20221021poulet2.jpg');
+}
+#boisdeleau{
+    background: top/ cover url('../media/img/20220426pouleteau1.jpg');
+}
+#pouletstandup{
+    background: top/ cover url('../media/img/20221021poulet1.jpg');
+}
