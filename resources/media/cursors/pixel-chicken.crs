@@ -1,0 +1,42 @@
+﻿[Arrow]
+Path=Chicken Normal Select.cur
+
+[Help]
+Path=Chicken Help Select.ani
+
+[AppStarting]
+Path=Chicken Working in Background.ani
+
+[Wait]
+Path=Chicken Busy.ani
+
+[Crosshair]
+Path=Chicken Precision Select.cur
+
+[IBeam]
+Path=Chicken Text Select.ani
+
+[NWPen]
+Path=Chicken Handwriting.cur
+
+[No]
+Path=Chicken Unavailable.cur
+
+[SizeNS]
+Path=Chicken Vertical.cur
+
+[SizeWE]
+Path=Chicken Horizontal.cur
+
+[SizeNWSE]
+Path=Chicken Diagonal 1.cur
+
+[SizeNESW]
+Path=Chicken Diagonal 2.cur
+
+[UpArrow]
+Path=Chicken Alternate Select.ani
+
+[SizeAll]
+Path=Chicken Move.cur
+
